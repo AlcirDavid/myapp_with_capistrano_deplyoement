@@ -1,9 +1,9 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.2"
 
-set :application, "my_app_name"
+set :application, "myapp"
 #set :repo_url, "git@example.com:AlcirDavid/myapp_repo.git"
-set :repo_url, "alcirdavid@0.0.0.0:/home/alcirdavid/Development/web-dev/myapp/myapp_repo.git"
+set :repo_url, "alcirdavid@0.0.0.0:/home/alcirdavid/Development/web-dev/myapp.git"
 
 
 # restart app by running: touch tmp/restart.txt
@@ -14,7 +14,8 @@ set :passenger_restart_with_touch, true
 set :puma_threads,    [4, 16]
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/var/www/my_app_name"
+#set :deploy_to, "/var/www/my_app_name"
+set :deploy_to, "/home/alcirdavid/Development/web-dev/deploy/var/www/myapp"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
