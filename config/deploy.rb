@@ -2,8 +2,8 @@
 lock "~> 3.11.2"
 
 set :application, "myapp"
-#set :repo_url, "git@example.com:AlcirDavid/myapp_repo.git"
-set :repo_url, "alcirdavid@0.0.0.0:/home/alcirdavid/Development/web-dev/myapp.git"
+set :repo_url, "https://github.com/AlcirDavid/myapp_with_capistrano_deplyoement.git"
+# set :repo_url, "alcirdavid@0.0.0.0:/home/alcirdavid/Development/web-dev/myapp.git"
 
 
 # restart app by running: touch tmp/restart.txt
